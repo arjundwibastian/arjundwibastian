@@ -1,16 +1,27 @@
-## Hi there 👋
+# Hi, I'm Arjun Dwi Bastian
 
-<!--
-**arjundwibastian/arjundwibastian** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Go backend student, Hacktivate Phase 3. I like building APIs that actually run with Docker.
 
-Here are some ideas to get you started:
+## What I'm working on
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- **BagiPangan (formerly ZeroHunger)** — Go microservices for sharing extra food with people nearby. Donors post listings, recipients post requests, claims tie them with a pickup code. Echo + gRPC + Postgres + Docker Compose. My flagship, in active development.
+- **RentGo** — car rental API in Go.
+- **BookLibrary** — smaller Go service for learning clean structure and Postgres.
+
+## Stack
+
+Go, Echo, gRPC, Protobuf, PostgreSQL, Docker, Postman. Learning: auth hardening, sagas, CI.
+
+## How I work
+
+- Small services with shared contracts
+- `docker compose up` should just work
+- READMEs with real run instructions, not just screenshots
+
+## Find me
+
+- GitHub: github.com/arjundwibastian
+- LinkedIn: _add your link_
+- Email: _add your email_
+
+Open to backend internships and collaborations.
