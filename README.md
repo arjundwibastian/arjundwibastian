@@ -1,84 +1,115 @@
 # 👋 Hi, I'm Arjun Dwi Bastian
 
-🎓 **Graduated Hacktiv8 (Phase 3)** — Go Backend Developer
-💼 **Currently looking for work** — open to full-time, contract, freelance, and collaborations
+### Go Backend Developer · Problem Solver · Former IT Support Technician
+
+I'm a backend developer from Jakarta, Indonesia, focused on building reliable services with **Go, PostgreSQL, REST, gRPC, and microservices**. Before moving into backend engineering, I spent almost three years supporting university staff and large computer-lab operations—experience that taught me to troubleshoot calmly, communicate clearly, and build with real users in mind.
+
+🎓 **Hacktiv8 Backend Golang graduate** · 💼 **Open to full-time, contract, freelance, and collaboration opportunities**
 
 [![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)](https://go.dev/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 [![gRPC](https://img.shields.io/badge/gRPC-244c5a?style=for-the-badge&logo=grpc&logoColor=white)](https://grpc.io/)
 [![Echo](https://img.shields.io/badge/Echo-FF6B6B?style=for-the-badge&logo=go&logoColor=white)](https://echo.labstack.com/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
-📍 Indonesia · 💬 Ask me about Go microservices, REST/gRPC, and Postgres
+📍 Jakarta, Indonesia · 💬 Ask me about Go microservices, REST/gRPC, PostgreSQL, or troubleshooting
 
 ---
 
 ## 🚀 Flagship Project
 
-### 🍱 BagiPangan (formerly ZeroHunger)
-> Go microservices platform connecting food donors with recipients. Donors post listings, recipients create requests, claims link them with a 6-digit pickup code.
+### 🍱 [BagiPangan](https://github.com/arjundwibastian/BagiPangan)
 
-**Architecture:** `user-service :8081/50051` · `food-service :8082/50052` · `request-service :8083/50053` · `claim-service :8084/50054` · shared `contracts` protobuf repo · `infra` Compose + Postman E2E
+> A Go microservices platform that helps food donors connect with recipients through location-based discovery and secure pickup verification.
+
+**Architecture:** `user-service :8081/50051` · `food-service :8082/50052` · `request-service :8083/50053` · `claim-service :8084/50054` · shared protobuf contracts · Docker Compose infrastructure
 
 **Highlights:**
-- JWT auth with donor/recipient roles, bcrypt hashing, refresh flow
-- Food listings with quantity reserve/release, nearby search by `request_id` + radius
-- Request lifecycle `searching → claimed → completed` with cancel compensation
-- Claim lifecycle `waiting_for_pickup → picked_up / cancelled` + Resend email notifications
-- Cross-service validation over gRPC (`GetUser`, `GetRequest`, `ReserveFoodQuantity`)
-- Docker Compose with HTTP-only host ports, internal gRPC, `DB_SSLMODE` handling
 
-🔗 **github.com/arjundwibastian/BagiPangan**
+- Built JWT authentication with donor/recipient roles, bcrypt hashing, and refresh tokens
+- Implemented nearby food discovery and quantity reservation/release workflows
+- Designed request and claim lifecycles with compensating actions for cancellations
+- Added email-based, six-digit pickup codes for secure food handover
+- Connected services through gRPC and exposed REST APIs with Echo
+- Containerized the platform with Docker Compose and created Postman end-to-end flows
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Area | Skills |
-|------|--------|
-| **Golang Backend** | Go 1.22+, Echo, net/http, REST design, versioned routing `/api/v1`, JWT (access/refresh), auth + role middleware, request validation, custom errors → HTTP/gRPC codes, bcrypt, concurrency, graceful shutdown, testify + mocks, table-driven tests |
-| **gRPC / Contracts** | Protobuf, buf, `protoc-gen-go`, unary interceptors (planned), service-to-service clients, `grpc.Dial` + insecure creds for local, timeouts + retries, status mapping |
-| **Databases** | PostgreSQL 14+, pgx v5 + pgxpool, GORM, migrations (`001_init.sql`), UUID PKs via `pgcrypto`, FKs + `ON DELETE CASCADE`, UNIQUE constraints, indexes (B-tree/GiST), transactions, compensating actions, connection pooling + `Ping` healthchecks, PostGIS-style nearby queries |
-| **DevOps / Tools** | Docker + Compose (multi-service builds with `context: ..`), `.env` + `.env.example` workflow, Git monorepo (converted from 7 repos + submodules), GitHub, Postman collections + environments, Resend API, VS Code launch configs |
+### Comfortable working with
+
+| Area | Technologies & Skills |
+|---|---|
+| **Languages** | Go, JavaScript, SQL |
+| **Backend** | RESTful APIs, gRPC, microservices, Echo, `net/http`, JWT authentication |
+| **Database** | PostgreSQL, PostGIS, pgx, GORM, migrations, transactions, database design |
+| **Frontend fundamentals** | HTML5, CSS3, JavaScript |
+| **Infrastructure & tools** | Docker, Docker Compose, Git, GitHub, Linux, Postman, Protobuf, buf |
+| **Testing & reliability** | Request validation, error handling, table-driven tests, mocks, graceful shutdown |
+
+### Currently learning
+
+[![TypeScript](https://img.shields.io/badge/TypeScript-Learning-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-Learning-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev/)
+[![Agentic Coding](https://img.shields.io/badge/Agentic_Coding-Learning-6E56CF?style=flat-square&logo=openai&logoColor=white)](https://en.wikipedia.org/wiki/AI-assisted_software_development)
+
+- **TypeScript** — adding safer types and better tooling to JavaScript projects
+- **React** — building component-based user interfaces
+- **AI-assisted development and agentic coding** — exploring how coding agents can support planning, implementation, testing, and review
 
 ---
 
 ## 📂 More Projects
 
 | Project | Description | Stack |
-|---------|-------------|-------|
-| **RentGo** | Car/vehicle rental API — auth, CRUD, bookings | Go, Echo, Postgres |
-| **BookLibrary** | Book management service — clean layered structure | Go, Postgres |
-| **gaming-house** | Golang CLI + database connection playground | Go, SQL |
+|---|---|---|
+| **[RentGo](https://github.com/arjundwibastian/RentGo)** | Vehicle-rental API with availability checks, bookings, and transaction-aware order management | Go, Echo, GORM, PostgreSQL |
+| **[BookLibrary](https://github.com/arjundwibastian/BookLibrary)** | Book-management backend with structured gRPC services and clear service separation | Go, gRPC, GORM, PostgreSQL, Docker |
+| **[gaming-house](https://github.com/arjundwibastian/gaming-house)** | CLI and database-connection playground for experimenting with Go and SQL | Go, SQL |
 
 ---
 
-## 🎓 Experience & Education
+## 💼 Experience
 
-**Hacktiv8 — Phase 3 Final Project (2026)**
-- Designed and built BagiPangan microservices end-to-end
-- Owned proto contracts, Compose orchestration, E2E testing
-- Hardened for public release: secret hygiene, port exposure review, README + flow diagram
+### Information Technology Support Technician · Universitas PGRI Madiun
+**March 2023 – January 2026**
 
-**Self-directed (2025–2026)**
-- Built REST APIs in Go with Postgres + Docker
-- Practiced migrations, auth, testing, and deployment
+- Resolved around 20 weekly support requests for lecturers and administrators across PCs, laptops, printers, scanners, software, and personal devices
+- Prepared and maintained more than 180 PCs across nine computer labs for major testing events serving about 1,000 participants per event
+- Planned annual upgrades for roughly 40 PCs across two labs, from hardware selection through OS, driver, application, and peripheral setup
+
+This support background still shapes how I work today: diagnose the real problem, keep systems dependable, and make technical solutions understandable.
+
+---
+
+## 🎓 Education
+
+### Backend Golang Program · Hacktiv8
+**May 2026 – September 2026**
+
+Completed an intensive backend training program centered on Go. I practiced API design, PostgreSQL data modeling, authentication, gRPC communication, microservice architecture, testing, and Docker-based development—culminating in **BagiPangan** as my final project.
 
 ---
 
 ## 📊 GitHub Stats
 
 ![Arjun's GitHub stats](https://github-readme-stats.vercel.app/api?username=arjundwibastian&show_icons=true&theme=tokyonight&hide_border=true)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=arjundwibastian&layout=compact&theme=tokyonight&hide_border=true)
-![Streak](https://streak-stats.demolab.com?user=arjundwibastian&theme=tokyonight&hide_border=true)
+![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=arjundwibastian&layout=compact&theme=tokyonight&hide_border=true)
+![GitHub streak](https://streak-stats.demolab.com?user=arjundwibastian&theme=tokyonight&hide_border=true)
 
 ---
 
-## 📫 Contact
+## 📫 Let's Connect
 
-- GitHub: https://github.com/arjundwibastian
-- LinkedIn: www.linkedin.com/in/arjun-dwi-bastian
-- Email: arjundwibastian@gmail.com
-- Location: Indonesia — open to remote
+- [GitHub](https://github.com/arjundwibastian)
+- [LinkedIn](https://www.linkedin.com/in/arjun-dwi-bastian)
+- [Email](mailto:arjundwibastian@gmail.com)
+- Jakarta, Indonesia · Open to remote opportunities
 
-⭐ If you like BagiPangan, leave a star — and reach out if you're hiring Go backend.
+If you're building dependable backend systems—or looking for a Go developer who brings both engineering and hands-on support experience—I'd be happy to connect.
+
+⭐ If BagiPangan interests you, consider leaving the project a star!
